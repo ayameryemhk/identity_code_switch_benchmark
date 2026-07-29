@@ -1,0 +1,188 @@
+{
+  "summary": {
+    "n_samples": 15,
+    "pragmatic_accuracy_pct": 13.33,
+    "literal_translation_rate_pct": 86.67,
+    "failure_mode_breakdown": {
+      "Failure to Capture Sarcasm": 10,
+      "Misattributing Speaker Tone": 3
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "CS_IDENTITY_01",
+      "pragmatic_intent": "Indexing Positivity",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: What are you doing? How's it going? | Speaker B: I'm studying a lot these days, honestly I'm tired, but Cool, I finally finished the exam!",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_02",
+      "pragmatic_intent": "Indexing Positivity",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Misattributing Speaker Tone",
+      "model_output": "Speaker A: I have good news, honestly I'm happy. Awesome, I got the internship!",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": true,
+      "detected_failure_mode": null,
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_03",
+      "pragmatic_intent": "Indexing Positivity",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: Did you see who won? | Speaker B: Yes! Amazing, I didn't expect it to happen like this.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_04",
+      "pragmatic_intent": "Reducing Directness/Politeness",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: Why are you yelling at me like that? | Speaker B: I mean, well, let's just say I respect your opinion, but I don't understand you.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": [
+        "i respect your"
+      ]
+    },
+    {
+      "sample_id": "CS_IDENTITY_05",
+      "pragmatic_intent": "Reducing Directness/Politeness",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Failure to Capture Sarcasm",
+      "model_output": "Speaker A: He was very wrong about that matter. | Speaker B: Well, I guess everyone has their own perspective, I won't change his opinion.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Misattributing Speaker Tone",
+      "individualistic_markers_found": [
+        "i guess"
+      ]
+    },
+    {
+      "sample_id": "CS_IDENTITY_06",
+      "pragmatic_intent": "Reducing Directness/Politeness",
+      "target_stance": "Mitigating Taboo",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: Tell me what you think about it. | Speaker B: Honestly, I'd rather not judge, everyone has their own opinion.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Misattributing Speaker Tone",
+      "individualistic_markers_found": [
+        "i'd rather"
+      ]
+    },
+    {
+      "sample_id": "CS_IDENTITY_07",
+      "pragmatic_intent": "Expressing Individual Concerns",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Misattributing Speaker Tone",
+      "model_output": "Speaker A: Why don't you get involved with us? | Speaker B: I mind my own business, that's just my nature.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": true,
+      "detected_failure_mode": null,
+      "individualistic_markers_found": [
+        "i mind my own business"
+      ]
+    },
+    {
+      "sample_id": "CS_IDENTITY_08",
+      "pragmatic_intent": "Expressing Individual Concerns",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: You two are always alone. | Speaker B: I believe everyone needs their own space sometimes, not everything has to be done with the group.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Misattributing Speaker Tone",
+      "individualistic_markers_found": [
+        "i believe"
+      ]
+    },
+    {
+      "sample_id": "CS_IDENTITY_09",
+      "pragmatic_intent": "Expressing Individual Concerns",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Failure to Capture Sarcasm",
+      "model_output": "Speaker A: Why do you always isolate yourself? | Speaker B: I just prefer working alone, that's my style and that's it.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_10",
+      "pragmatic_intent": "Authentic/Sarcastic Identity",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Failure to Capture Sarcasm",
+      "model_output": "Speaker A: Did you see last night's episode? | Speaker B: Big flop, honestly it was very bad.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_11",
+      "pragmatic_intent": "Authentic/Sarcastic Identity",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Failure to Capture Sarcasm",
+      "model_output": "Speaker A: So you believe me this time? | Speaker B: Sure, whatever you say, as always.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_12",
+      "pragmatic_intent": "Authentic/Sarcastic Identity",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Misattributing Speaker Tone",
+      "model_output": "Speaker A: Are you finishing the challenge or not? | Speaker B: Who's gonna know, as usual I'll forget.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_13",
+      "pragmatic_intent": "Defensive Strategy",
+      "target_stance": "Softening Criticism",
+      "expected_failure_mode": "Misattributing Speaker Tone",
+      "model_output": "Speaker A: Why do you wake up early when you sleep late? | Speaker B: Of course, I have an inner alarm, that's it, do you understand me now?",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_14",
+      "pragmatic_intent": "Defensive Strategy",
+      "target_stance": "Mitigating Taboo",
+      "expected_failure_mode": "Literal Loss of Softness",
+      "model_output": "Speaker A: What kind of ideas are these? | Speaker B: This is just something personal, you won't understand me and that's it.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    },
+    {
+      "sample_id": "CS_IDENTITY_15",
+      "pragmatic_intent": "Defensive Strategy",
+      "target_stance": "Individualistic vs. Collectivist",
+      "expected_failure_mode": "Failure to Capture Sarcasm",
+      "model_output": "Speaker A: Why do you always respond like that? | Speaker B: I can't understand you either, honestly.",
+      "semantic_similarity": 1.0,
+      "pragmatic_hit": false,
+      "detected_failure_mode": "Failure to Capture Sarcasm",
+      "individualistic_markers_found": []
+    }
+  ]
+}
